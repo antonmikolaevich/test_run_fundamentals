@@ -1,0 +1,11 @@
+[2023-05-27T18:22:47.658] [INFO] debug - Report Aggregation started
+[2023-05-27T18:22:47.662] [INFO] debug - Included metrics for suite: 0-0 suite-0-0
+[2023-05-27T18:22:47.664] [INFO] debug - Aggregated 1 specs, 1 suites, 
+[2023-05-27T18:22:47.665] [INFO] debug - Json report write starting: D:\ASMT test frameworks\husky readme repo\POmodel\reports\html-reports\master-report.json
+[2023-05-27T18:22:47.698] [INFO] debug - Json write completed: D:\ASMT test frameworks\husky readme repo\POmodel\reports\html-reports\master-report.json
+[2023-05-27T18:22:47.699] [INFO] debug - Json Generation Completed
+[2023-05-27T18:22:47.700] [INFO] debug - Html Generation started in D:\ASMT test frameworks\husky readme repo\POmodel\node_modules\wdio-html-nice-reporter
+[2023-05-27T18:22:47.726] [INFO] debug - Html Generation Completed
+[2023-05-27T18:22:47.733] [INFO] debug - copyied css : D:\ASMT test frameworks\husky readme repo\POmodel\node_modules\wdio-html-nice-reporter\css\ to D:\ASMT test frameworks\husky readme repo\POmodel\reports\html-reports\
+[2023-05-27T18:22:47.741] [INFO] debug - browser launched
+[2023-05-27T18:22:47.741] [INFO] debug - Report Aggregation completed
