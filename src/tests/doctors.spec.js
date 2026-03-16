@@ -10,6 +10,7 @@ describe('Module 7: Advanced Configuration', () => {
       expect(pageTitle).toEqual('Appointment Planner - Syncfusion Angular Components Showcase App');
     });
   
+    
   it.only('should open modal', async () => {
       await pages('dashboard').sideMenu.item('doctors').click();
       await pages('doctors').doctorListHeader.addDoctorBtn.click();
