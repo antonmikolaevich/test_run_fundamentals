@@ -1,9 +1,7 @@
 https://prabinpoudel.com.np/articles/run-eslint-on-git-commit-with-husky-and-lint-staged/#what-is-husky
 
-
 + in package.json
 "lint": "eslint ./ --fix"
-
 
 Workflow:
 1. npm install husky
