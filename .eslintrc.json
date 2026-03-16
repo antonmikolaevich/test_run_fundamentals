@@ -13,8 +13,8 @@
     },
     "rules":{
         "no-undef":"off",
-        "no-unused-vars":"off"
-        // "no-useless-escape":"off",
+        "no-unused-vars":"off",
+        "no-useless-escape":"off"
         // "no-useless-catch":"off",
         // "no-mixed-spaces-and-tabs": "error"
     }

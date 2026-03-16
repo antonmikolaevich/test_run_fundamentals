@@ -7,7 +7,8 @@
     "test": "wdio run ./wdio.conf.js",
     "prepare": "husky install",
     "lint": "eslint ./ --fix",
-    "report": "node node_modules/wdio-html-nice-reporter/lib/makeReport.js master-report.html 'reports/html-reports/'"
+    "report": "node node_modules/wdio-html-nice-reporter/lib/makeReport.js master-report.html 'reports/html-reports/'",
+    "scriptname": "husky install"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +24,7 @@
   "dependencies": {
     "@log4js-node/log4js-api": "^1.0.2",
     "chai": "^4.3.7",
-    "eslint": "^8.41.0",
+    "eslint": "^8.57.1",
     "husky": "^8.0.3",
     "log4j": "^1.0.0",
     "log4js": "^6.9.1",
