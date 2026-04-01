@@ -40,4 +40,8 @@ describe('Module 7: Advanced Configuration', () => {
       await pages('doctors').addDoctorPopup.cancelButton.click();
       await expect(pages('doctors').addDoctorPopup.rootEl).not.toBeDisplayed();
     });
+
+    it('create the doctor appointment', async () => {
+      // Test implementation for creating a doctor appointment
+    });
   });
