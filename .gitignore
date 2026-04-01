@@ -1,1 +1,52 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+.env.local
+.env.production
+.env.test
+
+# MCP configuration (may contain tokens)
+.mcp.json
+mcp.json
+
+# Private keys and certificates
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+
+# Credential directories
+secrets/
+credentials/
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Test outputs
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings (may contain sensitive permissions)
+.claude/settings.local.json

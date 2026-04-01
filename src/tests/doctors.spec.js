@@ -5,19 +5,19 @@ describe('Module 7: Advanced Configuration', () => {
       await pages('dashboard').open();
     });
   
-  it.only('should open page', async () => {
+  it('should open page - checking the page title of Doctors Page', async () => {
       const pageTitle = await browser.getTitle();
       expect(pageTitle).toEqual('Appointment Planner - Syncfusion Angular Components Showcase App');
     });
   
-    
-  it.only('should open modal', async () => {
+
+  it('should open modal', async () => {
       await pages('dashboard').sideMenu.item('doctors').click();
       await pages('doctors').doctorListHeader.addDoctorBtn.click();
       await expect(pages('doctors').addDoctorPopup.rootEl).toBeDisplayed();
     });
   
-  it.only('should add doctor', async () => {
+  it('should add doctor', async () => {
       await pages('dashboard').sideMenu.item('doctors').waitForDisplayed();
       await pages('dashboard').sideMenu.item('doctors').click();
       await pages('doctors').doctorListHeader.addDoctorBtn.click();
@@ -33,7 +33,7 @@ describe('Module 7: Advanced Configuration', () => {
       await expect(pages('doctors').specialistCard(8).education).toHaveText('Basic', {ignoreCase: true})
     });
   
-  it.only('should close modal', async () => {
+  it('should close modal while creating the Doctors Card', async () => {
       await pages('dashboard').sideMenu.item('doctors').waitForDisplayed();
       await pages('dashboard').sideMenu.item('doctors').click();
       await pages('doctors').doctorListHeader.addDoctorBtn.click();

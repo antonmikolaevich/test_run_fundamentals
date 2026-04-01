@@ -1,0 +1,79 @@
+{
+  "project": {
+    "permissions": {
+      "allowTools": {
+        "web": ["searchDocs", "fetchExamples"],
+        "python": ["scriptExecution", "dataProcessing"],
+        "canmore": ["codeEdit", "fileRefactor"]
+      },
+      "blockTools": ["image_gen"]
+    },
+    "toolConfig": {
+      "web": {
+        "maxSearchResults": 10,
+        "defaultTimeout": 60,
+        "allowedDomains": ["webdriver.io", "eslint.org", "nodejs.org"]
+      },
+      "python": {
+        "maxExecutionTime": 120,
+        "allowPackages": ["selenium", "pandas", "numpy"],
+        "sandboxed": true
+      },
+      "canmore": {
+        "enabled": true,
+        "allowCodeEditing": true,
+        "formatOnSave": true,
+        "lintOnSave": true
+      }
+    },
+    "userSettings": {
+      "theme": "dark",
+      "personality": "concise",
+      "codeStyle": {
+        "language": "javascript",
+        "linting": "eslint",
+        "prettier": true,
+        "eslintConfigFile": ".eslintrc.json",
+        "indent": 2,
+        "quotes": "single",
+        "semi": true,
+        "maxLineLength": 100,
+        "noConsole": true,
+        "allowJsdoc": true,
+        "ignorePatterns": ["dist/*","node_modules/*"]
+      },
+      "ciCd": {
+        "git": true,
+        "githubActions": true,
+        "lintOnCommit": true,
+        "lintOnPR": true,
+        "runTestsOnPush": true,
+        "runTestsOnPR": true,
+        "testTimeout": 180,
+        "coverageThreshold": 80,
+        "retryFailedJobs": 2,
+        "testFilesPattern": "src/tests/**/*.spec.js",
+        "regexRules": ["should_.*_spec"],
+        "ciBranches": ["main","develop"],
+        "artifactStorage": "reports/html-reports/",
+        "notifications": {"slack": "enabled"}
+      },
+      "testingFramework": {
+        "webdriverIO": true,
+        "mocha": true,
+        "bdd": true,
+        "retryFailedTests": 2,
+        "parallel": true
+      },
+      "regexSupport": true
+    },
+    "projectContext": {
+      "language": "javascript",
+      "framework": "webdriverIO",
+      "testingStyle": "BDD",
+      "linting": "eslint + prettier",
+      "ciTool": "GitHub Actions",
+      "repository": "private"
+    }
+  }
+}

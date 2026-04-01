@@ -1,0 +1,4 @@
+Create a doctor, edit the doctor, delete the doctor.
+1. Create doctor with name Milos Baros, education Liverpool, email milos_baros@email.com, mobile 573809189
+2. Edit doctor education to Galatasaray, mobile 570100200
+3. Delete doctor

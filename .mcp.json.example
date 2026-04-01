@@ -1,0 +1,44 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/mcp.json",
+  "mcpServers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "@modelcontextprotocol/server-filesystem", "."],
+      "description": "Enhanced file operations for test data, fixtures, and reports management"
+    },
+    "puppeteer": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "@modelcontextprotocol/server-puppeteer"],
+      "description": "Browser automation capabilities complementing WebdriverIO for screenshots, PDFs, and advanced interactions"
+    },
+    "wdio-mcp": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "@wdio/mcp"],
+      "description": "Official WebdriverIO MCP server — здесь будут runTests, analyzeFailure, rerunFailed"
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "@playwright/mcp@latest"],
+      "description": "Browser automation capabilities"
+    },
+    "shell": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@mako10k/mcp-shell-server"],
+      "description": "MCP server for executing shell commands on Windows"
+    },
+    "github": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "description": "GitHub API integration - set GITHUB_TOKEN environment variable"
+    }
+  }
+}
